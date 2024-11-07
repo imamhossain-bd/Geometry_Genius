@@ -55,7 +55,7 @@ document.getElementById('parallelogram').addEventListener('click', function(){
     }
 })
 
-//........................
+//........................Rhombus Function____________________________
 
 document.getElementById("rhombus").addEventListener('click', function(){
     const rhombusD1 = document.getElementById("rhombusD1")
@@ -74,4 +74,45 @@ document.getElementById("rhombus").addEventListener('click', function(){
         rhombusArea.innerText = area
     }
 
+})
+
+
+//.................pentagon Function______________________
+document.getElementById('pentagon').addEventListener('click', function(){
+    const pentagonPeri = document.getElementById('pentagonPeri')
+    const pentagonPeriInput = parseFloat(pentagonPeri.value)
+    const pentagonApo = document.getElementById('pentagonApo')
+    const pentagonApoInput = parseFloat(pentagonApo.value)
+    const pentagonArea = document.getElementById('pentagonArea')
+    
+    if(isNaN(pentagonPeriInput) || isNaN(pentagonApoInput)){
+        alert('Please Insert Number')
+        return
+    }
+    else{
+        const area = (5/2) * pentagonPeriInput * pentagonApoInput
+        pentagonArea.innerText = area
+    }
+
+
+})
+
+
+//....................Ellipse Function_______________________
+document.getElementById('ellipse').addEventListener('click', function(){
+    const majorRadius = document.getElementById("majorRadius")
+    const minorRadius = document.getElementById("minorRadius")
+
+    const majorRadiusInput = parseFloat(majorRadius.value)
+    const minorRadiusInput = parseFloat(minorRadius.value)
+    const ellipseArea = document.getElementById("ellipseArea")
+
+    if(isNaN(majorRadiusInput) || isNaN(minorRadiusInput)){
+        alert("Please Insert Number")
+        return
+    }
+    else{
+        const area = 3.14 * majorRadiusInput * minorRadiusInput
+        ellipseArea.innerText = area
+    }
 })

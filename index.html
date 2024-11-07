@@ -120,19 +120,19 @@
                             <div>
                                 <div class="text-center mt-5">
                                     <h2 class="font-extrabold text-2xl">Pentagon</h2>
-                                    <p class="mt-3 mb-3 font-semibold text-lg">Area (A) = W X I</p>
+                                    <p class="mt-3 mb-3 font-semibold text-lg">Area (A) = (P X A) / 2</p>
                                 </div>
                                 <div class="flex justify-center items-center  gap-4">
-                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="h" placeholder="b">
+                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="pentagonPeri" placeholder="P">
                                     <p class="">CM</p>
-                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="b" placeholder="h">
+                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="pentagonApo" placeholder="A">
                                     <p>CM</p>
                                 </div>
                                 <div>
-                                    <p class="text-lg text-center pt-3">Area: <span id="triangleArea"></span> <span>CM <sup>2</sup></span></p>
+                                    <p class="text-lg text-center pt-3">Area: <span id="pentagonArea"></span> <span>CM <sup>2</sup></span></p>
                                 </div>
                             </div>
-                            <button class="w-full mt-2 rounded-lg font-bold text-[#fff] h-10 bg-[#1090D8]">Calculate</button>
+                            <button id="pentagon" class="w-full mt-2 rounded-lg font-bold text-[#fff] h-10 bg-[#1090D8]">Calculate</button>
                         </div>
                         <div class="w-[325px] px-4 h-[435px] bg-slate-50 border-2 border-[#cecece] rounded-xl">
                             <div class="w-full h-[47%]">
@@ -144,16 +144,16 @@
                                     <p class="mt-3 mb-3 font-semibold text-lg">Area (A) =X b X h</p>
                                 </div>
                                 <div class="flex justify-center items-center  gap-4">
-                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="h" placeholder="b">
+                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="majorRadius" placeholder="A">
                                     <p class="">CM</p>
-                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="b" placeholder="h">
+                                    <input class="w-[95px] outline-none bg-slate-300 px-2 pt-1" type="text" name="" id="minorRadius" placeholder="B">
                                     <p>CM</p>
                                 </div>
                                 <div>
-                                    <p class="text-lg text-center pt-3">Area: <span id="triangleArea"></span> <span>CM <sup>2</sup></span></p>
+                                    <p class="text-lg text-center pt-3">Area: <span id="ellipseArea"></span> <span>CM <sup>2</sup></span></p>
                                 </div>
                             </div>
-                            <button class="w-full mt-2 rounded-lg font-bold text-[#fff] h-10 bg-[#1090D8]">Calculate</button>
+                            <button id="ellipse" class="w-full mt-2 rounded-lg font-bold text-[#fff] h-10 bg-[#1090D8]">Calculate</button>
                         </div>
                     </div>
                 </div>
