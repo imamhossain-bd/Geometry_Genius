@@ -14,7 +14,7 @@ document.getElementById("triangle").addEventListener('click', function(){
     }
     else{
         const area = 0.5 * triangleBaseInput * triangleHeightInput
-    triangleSpanArea.innerText = area
+    triangleSpanArea.innerText = parseFloat(area.toFixed(2))
     }
 })
 
@@ -32,7 +32,7 @@ document.getElementById('rectangle').addEventListener('click', function(){
     }
     else{
         const area = rectangleWidthInput * rectangleLengthInput
-        rectangleAreaSpan.innerText = area
+        rectangleAreaSpan.innerText = parseFloat(area.toFixed(2))
     }
     
    
@@ -71,7 +71,7 @@ document.getElementById("rhombus").addEventListener('click', function(){
     }
     else{
         const area = (rhombusD1Input * rhombusD2Input) / 2
-        rhombusArea.innerText = area
+        rhombusArea.innerText = parseFloat(area.toFixed(2))
     }
 
 })
@@ -91,7 +91,7 @@ document.getElementById('pentagon').addEventListener('click', function(){
     }
     else{
         const area = (5/2) * pentagonPeriInput * pentagonApoInput
-        pentagonArea.innerText = area
+        pentagonArea.innerText = parseFloat(area.toFixed(2))
     }
 
 
@@ -113,6 +113,6 @@ document.getElementById('ellipse').addEventListener('click', function(){
     }
     else{
         const area = 3.14 * majorRadiusInput * minorRadiusInput
-        ellipseArea.innerText = area
+        ellipseArea.innerText = parseFloat(area.toFixed(2))
     }
 })
